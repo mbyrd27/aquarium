@@ -1,0 +1,7 @@
+.locations {
+    border: 3px dotted dodgerblue;
+}
+
+.location__image {
+    height: 15rem;
+}
