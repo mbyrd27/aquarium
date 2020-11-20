@@ -17,6 +17,15 @@ const fishCollection = [
         length: 48,
         location: "Great Barrier Reef",
         image: "./images/Bruce.jpeg"
+    },
+
+    {
+        name: "Dory",
+        food: "Spicy Tacos for some reason",
+        species: "Blue Tang",
+        length: 6,
+        location: "Great Barrier Reef",
+        image: "./images/dory.jpeg"
     }
 ]
 
