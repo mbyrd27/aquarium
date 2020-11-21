@@ -7,6 +7,5 @@ export const FishList = () => {
 
     for (const fish of fishes) {
         contentElement.innerHTML += Fish(fish);
-        console.log(fish);
     }  
 }
