@@ -54,15 +54,20 @@ const fishCollection = [
         location: "Great Barrier Reef",
         image: "./images/Bruce.jpeg"
 
+    },
+
+    {
+        name: "Charlene",
+        food: "Anchovies",
+        species: "Croaker",
+        length: 15,
+        location: "Cape Hatteras, NC",
+        image: "./images/Charlene.jpeg"
     }
 
 
 ]
 
-// Allows a copy of the fish collection object to be accessible
-//export const useFish = () => {
-  //  return fishCollection.slice();
-//}
 
 export const mostHolyFish = () => {
     const holyFish = fishCollection.filter(fish => {
@@ -73,7 +78,12 @@ export const mostHolyFish = () => {
 
 export const soldierFish = () => {
     const soldiers = fishCollection.filter(fish => {
-        return fish.length % 5 == 0;
+        if (fish.length % 3 == 0) {
+            return false
+        }
+        else {
+            return fish.length % 5 == 0;
+        }
     });
     return soldiers;
 }

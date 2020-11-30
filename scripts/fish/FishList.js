@@ -3,17 +3,18 @@ import { mostHolyFish, soldierFish, nonHolyFish } from "./FishDataProvider.js"
 
 export const FishList = () => {
     const contentElement = document.querySelector(".fishes");
-    let fishes = mostHolyFish()
+    //let fishes = mostHolyFish()
 
-    function processFish() {
+    function processFish(getFish) {
+        let fishes = getFish;
         for (const fish of fishes) {
             contentElement.innerHTML += Fish(fish);
-            console.log('ran func')
         }
+
     }
-    processFish();
-    fishes = soldierFish();
-    processFish();
-    fishes = nonHolyFish();
-    processFish();
+
+    processFish(mostHolyFish());
+    processFish(soldierFish());
+    processFish(nonHolyFish());
+
 }
