@@ -7,9 +7,9 @@ export const FishList = () => {
 
     function processFish(getFish) {
         let fishes = getFish;
-        for (const fish of fishes) {
-            contentElement.innerHTML += Fish(fish);
-        }
+        
+        contentElement.innerHTML += fishes.map(fish => Fish(fish));
+
 
     }
 
