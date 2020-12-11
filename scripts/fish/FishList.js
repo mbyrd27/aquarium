@@ -9,8 +9,6 @@ export const FishList = () => {
         let fishes = getFish;
         
         contentElement.innerHTML += fishes.map(fish => Fish(fish));
-
-
     }
 
     processFish(mostHolyFish());

@@ -5,7 +5,5 @@ const contentTarget = document.querySelector(".tips");
 const advice = takeAdvice();
 
 export const TipList = () => {
-    for (const tip of advice) {
-        contentTarget.innerHTML += Tips(tip);
-    }
+    contentTarget.innerHTML += advice.map(tip => Tips(tip));
 }
